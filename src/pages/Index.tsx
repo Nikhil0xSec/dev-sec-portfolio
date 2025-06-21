@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Instagram, Mail, Moon, Sun, Shield, Code, Terminal, Lock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -85,10 +84,14 @@ const Index = () => {
         </div>
         
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          {/* Profile Picture Placeholder */}
+          {/* Profile Picture */}
           <div className="mb-8">
-            <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center">
-              <Shield className="w-20 h-20 text-white" />
+            <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-blue-600 dark:border-cyan-400 shadow-xl">
+              <img 
+                src="/lovable-uploads/81f2bd19-56ab-4fc4-8c89-7404757db42d.png" 
+                alt="Nikhil Kumar Dev Profile Picture" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           
